@@ -1,5 +1,5 @@
 import Funcionario from '@/model/Funcionario'
-import Styles from '@/styles/sistema/funcionarios/cartaofuncionario.module.css'
+import Styles from '@/styles/sistema/Funcionarios/cartaofuncionario.module.css'
 import IconeLixeira from '../Icones/IconeLixeira'
 import IconeEditar from '../Icones/IconeEditar'
 interface cartaoFuncionarioProps{

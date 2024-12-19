@@ -3,7 +3,7 @@ import { excluiFuncionario, retornaFuncionarios } from "../../../../functions/fi
 
 import CartaoFuncionario from "../../components/Gestor/CartaoFuncionario"
 import Carregando from "@/components/Carregando"
-import Styles from "@/styles/sistema/funcionarios/funcionarios.module.css"
+import Styles from "@/styles/sistema/Funcionarios/funcionarios.module.css"
 import Funcionario from "@/model/Funcionario"
 import CartaoFuncionarioEdicao from "../../components/Gestor/CartaoFuncionarioEdicao"
 import useAuthGestorContext from "@/data/hooks/hookAuthGestorContext"

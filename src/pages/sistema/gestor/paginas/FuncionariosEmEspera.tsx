@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import {aceitaFuncionario, rejeitaFuncionarioEmEspera, retornaFuncionariosEmEspera } from "../../../../functions/firestoreFunctionsGestor"
 import Carregando from "@/components/Carregando"
-import Styles from "@/styles/sistema/funcionarios/funcionarios.module.css"
+import Styles from "@/styles/sistema/Funcionarios/funcionarios.module.css"
 import Funcionario from "@/model/Funcionario"
 import useAuthGestorContext from "@/data/hooks/hookAuthGestorContext"
 import CartaoFuncionarioEmEspera from "../../components/Gestor/CartaoFuncionarioEmEspera"

@@ -1,6 +1,6 @@
 import Funcionario from "@/model/Funcionario"
 import { useState } from "react"
-import Styles from '@/styles/sistema/funcionarios/cartaoFuncionarioEdicao.module.css'
+import Styles from '@/styles/sistema/Funcionarios/cartaoFuncionarioEdicao.module.css'
 import BotaoComum from "../BotaoComum"
 import { atualizaFuncionario } from "../../../../functions/firestoreFunctionsGestor"
 import Carregando from "@/components/Carregando"
