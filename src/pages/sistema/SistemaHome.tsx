@@ -35,18 +35,17 @@ export default function SistemaHome(props:SistemaHomeProps) {
     }else if(permissao == 'leitor'){
       if(usuarioFuncionario){
         await atualizaAutomaticamenteStatusFuncionario(usuarioFuncionario) //Atualiza o status do funcionario baseado se o gestor o aceitou ou não
-        
-        if(usuarioFuncionario.status == 'espera'){ //Se o usuario ainda não foi aceito pelo Gestor
+        if(usuarioFuncionario.codigo == 'inexistente'){ //Se o usuario ainda não têm um código ele têm que adicionar 1
+          return(
+            <AdicionaCodigo/>
+          )
+        }else if(usuarioFuncionario.status == 'espera'){ //Se o usuario ainda não foi aceito pelo Gestor
           return(
             <PaginaDeEsperaGestor/>
           )
         }else if(usuarioFuncionario.status == 'rejeitado'){//Se o usuario foi rejeitado
           return(
             <AdicionaCodigo mensagem="O gestor adicionado anteriormente não permitiu o seu acesso!"/>
-          )
-        }else if(usuarioFuncionario.codigo == 'inexistente'){ //Se o usuario ainda não têm um código ele têm que adicionar 1
-          return(
-            <AdicionaCodigo/>
           )
         }
       else{ //Se tudo esta certo retorna a pagina do leitor

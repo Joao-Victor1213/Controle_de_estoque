@@ -278,13 +278,15 @@ export function ContextAuthWrap(props:any){ //Este será o compnente que envolve
                 
                 const existeDadosDesteFuncionario = await existeFuncionarioComEmail(user.email) //Verifica se existe os dados deste funcionario
                 if(!existeDadosDesteFuncionario){ //Se não existem dados deste funcionario
-                    criaDadosFuncionario(user.uid, user.displayName, user.email, 'inexistente')
+                    await criaDadosFuncionario(user.uid, user.displayName, user.email, 'inexistente')
                 }
             }
             const dadosFuncionario = await buscaDadosFuncionario(user.uid)
+
             adicionaEsperaCasoNaoEsteja(dadosFuncionario, user) //Adicionar a espera no gestor se já não estiver na espera ou aceito
             const usuario:UsuarioFuncionario = convertUserToUsuario(user, dadosFuncionario.codigo, dadosFuncionario.status, dadosFuncionario.permissao)
             await atualizaAutomaticamenteStatusFuncionario(usuario) //Verifica e atualiza o status do usuario quanto ao gestor
+
             setUsuario(usuario)
         }catch(e:any){
             console.log('Erro na hora de entrar com o google', e.message)
