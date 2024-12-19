@@ -1,0 +1,3 @@
+Excluir funcionario pelo gestor,
+Atualizar informações do funcionario pelo gestor,
+deixar o modo de leitor só para leitura, e transferir o modo atual para edição

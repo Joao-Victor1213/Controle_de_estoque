@@ -1,0 +1,10 @@
+.imagemDiv{
+    overflow: hidden; /* Garante que a imagem não ultrapasse a div */
+
+}
+.imagemDiv img {
+    width: 100%; /* Preenche a largura da div */
+    height: 100%; /* Preenche a altura da div */
+    object-fit: cover; /* Ajusta a imagem mantendo a proporção */
+    object-position: center; /* Centraliza a imagem na div */
+  }

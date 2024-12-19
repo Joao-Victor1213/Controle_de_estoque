@@ -1,0 +1,82 @@
+.botao{
+    color: whitesmoke;
+    padding-inline: 20%;
+    border-radius: 15px;
+}
+
+.botao:hover{
+    color: white;
+    background-color: var(--azul_Base);
+}
+
+.botoes{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    margin-block: 10px;
+}
+
+.cartaoitem{
+    min-width: 100px;
+    width: 45%;
+    max-height: 200px;
+    border: solid var(--azul_Base) 1px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+    background-color: var(--azul_Secundario);
+}
+
+.itemNome{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    overflow:hidden;
+    min-height: 40%;
+}
+
+.informacoes{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+}
+
+.descricao{
+    background-color: var(--azul_Base);
+    border: black solid 1px;
+    text-align:center;
+    color: var(--azul_Secundario);
+    border-radius: 15px; 
+    height: 44%;
+    overflow: auto;
+    overflow-wrap:break-word;
+    width: 80%;
+
+}
+
+.descricao::-webkit-scrollbar { /*barra de rolagem */
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+.descricao::-webkit-scrollbar-thumb { /*barra movel */
+
+
+  }
+.quantidade{
+    color: whitesmoke;
+    height: 10%;
+}
+
+@media (max-width: 400px)  { /*Controla qual nav deve aparecer por tamanho da tela*/
+    .cartaoitem{
+        width: 90%;
+    }
+}

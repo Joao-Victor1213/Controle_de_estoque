@@ -1,0 +1,42 @@
+.cartao{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.15rem;
+    width: 80%;
+}
+
+
+.input{
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.select{
+    border: solid black 2px;
+    width: 100%;
+}
+
+.funcao{
+    display: flex;
+    flex-direction: row;
+    gap:1%;
+    justify-content: baseline;
+    align-items: baseline;
+    width: 100%;
+}
+.permissao{
+    display: flex;
+    flex-direction: row;
+    gap:1%;
+    justify-content: baseline;
+    align-items: baseline;
+    width: 100%;
+}
+
+.botao{
+    color: whitesmoke;
+}

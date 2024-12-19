@@ -1,3 +1,6 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,17 +8,56 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --azul_Base: #3b82f6 ;
+  --azul_Secundario: #0e284c;
+  --azul_Destaque: #0048ae;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: white;
+    --foreground: black;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
+}
+
+a:hover{
+  color: var(--azul_Destaque);
+}
+
+input{
+  border: var(--azul_Destaque) solid 1px;
+  margin: 1px;
+  background-color: whitesmoke;
+  padding: 2%;
+  border-radius: 15px;
+  color: black;
+}
+input:focus{
+  border: var(--azul_Destaque) solid 1px;
+}
+
+textarea{
+  border: var(--azul_Destaque) solid 1px;
+  margin: 1px;
+  background-color: whitesmoke;
+  padding: 2%;
+  border-radius: 15px;
+  color: black;
+}
+
+
+button{
+  color: white;
+}
+
+textarea {
+  resize: none;
+
 }

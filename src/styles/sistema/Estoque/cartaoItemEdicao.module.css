@@ -1,0 +1,30 @@
+.cartao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    padding-right:5%;
+    gap: 1%;
+    
+}
+
+.inputText{
+    text-align: center;
+    background-color: var(--azul_Secundario);
+    color: whitesmoke;
+}
+
+.textArea{
+    text-align: center;
+    height: 100%;
+}
+
+.inputNumber{
+    color: black;
+    width: 30%;
+    align-self: center;
+    padding-block: 0.5%;
+    text-align: center;
+}
+

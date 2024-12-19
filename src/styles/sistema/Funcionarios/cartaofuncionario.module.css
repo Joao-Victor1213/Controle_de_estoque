@@ -1,0 +1,54 @@
+.cartaofuncionario{
+    
+    border: solid 2px var(--azul_Secundario);
+    width: 95%;
+    padding: 10%;
+    
+
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.botao{
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.botao:hover{
+    background-color: var(--azul_Secundario);
+    color: whitesmoke;
+    border-radius: 15px;
+}
+
+.th{ /*Para as informações de cada coluna*/
+    max-height: 2px;
+    overflow-wrap:break-word;
+    font-size: small;
+}
+
+@media (max-width: 500px){
+    .botoes{
+        width: 30px;
+        font-size: larger;
+    }
+    .botao{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    .th{ /*Para as informações de cada coluna*/
+        max-height: 2px;
+        overflow-wrap:break-word;
+        font-size: small;
+    }
+}
+/* .nome{
+}
+
+.email{
+} */
