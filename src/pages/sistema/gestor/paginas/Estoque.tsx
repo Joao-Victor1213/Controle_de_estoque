@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { deletaItem, retornaEstoque } from "../../functions/firestoreFunctions"
+import { deletaItem, retornaEstoque } from "../../../../functions/firestoreFunctions"
 import Styles from '@/styles/sistema/Estoque/estoque.module.css'
 import Carregando from "@/components/Carregando"
 import CartaoItem from "../../components/CartaoItem"

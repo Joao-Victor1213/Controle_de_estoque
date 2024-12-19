@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { excluiFuncionario, retornaFuncionarios } from "../../functions/firestoreFunctionsGestor"
+import { excluiFuncionario, retornaFuncionarios } from "../../../../functions/firestoreFunctionsGestor"
 
 import CartaoFuncionario from "../../components/Gestor/CartaoFuncionario"
 import Carregando from "@/components/Carregando"

@@ -1,6 +1,6 @@
 import useAuthContext from "@/data/hooks/hookAuthContext";
 import { useState } from "react";
-import { adicionaCodigoParaFuncionario, atualizaStatusFuncionario } from "./functions/firestoreFunctions";
+import { adicionaCodigoParaFuncionario, atualizaStatusFuncionario } from "../../functions/firestoreFunctions";
 import Carregando from "@/components/Carregando";
 import { useRouter } from "next/router";
 import { adicionaFuncionarioAEspera } from "@/data/context/functions/functionsContext";

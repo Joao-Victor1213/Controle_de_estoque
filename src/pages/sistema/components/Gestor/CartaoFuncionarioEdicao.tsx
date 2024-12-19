@@ -2,7 +2,7 @@ import Funcionario from "@/model/Funcionario"
 import { useState } from "react"
 import Styles from '@/styles/sistema/funcionarios/cartaoFuncionarioEdicao.module.css'
 import BotaoComum from "../BotaoComum"
-import { atualizaFuncionario } from "../../functions/firestoreFunctionsGestor"
+import { atualizaFuncionario } from "../../../../functions/firestoreFunctionsGestor"
 import Carregando from "@/components/Carregando"
 import UsuarioGestor from "@/model/UsuarioGestor"
 
@@ -15,10 +15,10 @@ export default function CartaoFuncionarioEdicao(props:CartaoFuncionarioEdicaoPro
     const [carregando, setCarregando] = useState<boolean>(false)
     const gestor = props.usuarioGestor
     const funcionario = props.funcionario
-    const [nome, setNome] = useState(funcionario.nome)
-    const [email, setEmail] = useState(funcionario.email)
-    const [cargo, setCargo] = useState(funcionario.cargo)
-    const [permissao, setPermissao] = useState(funcionario.permissao)
+    const [nome, setNome] = useState(funcionario?.nome)
+    const [email, setEmail] = useState(funcionario?.email)
+    const [cargo, setCargo] = useState(funcionario?.cargo)
+    const [permissao, setPermissao] = useState(funcionario?.permissao)
 
     async function salvarFuncionario(){
         try {

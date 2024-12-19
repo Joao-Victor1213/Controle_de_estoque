@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import {deletaItemPorCodigo, retornaEstoquePorCodigo } from "../../functions/firestoreFunctions"
+import {deletaItemPorCodigo, retornaEstoquePorCodigo } from "../../../../functions/firestoreFunctions"
 import Styles from '@/styles/sistema/Estoque/estoque.module.css'
 import Carregando from "@/components/Carregando"
 import CartaoItem from "../../components/CartaoItem"

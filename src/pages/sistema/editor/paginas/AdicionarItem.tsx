@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BotaoComum from "../../components/BotaoComum";
-import { adicionaItemPorCodigo } from "../../functions/firestoreFunctions";
+import { adicionaItemPorCodigo } from "../../../../functions/firestoreFunctions";
 import Item from "@/model/Item";
 import useAuthContext from "@/data/hooks/hookAuthContext";
 import Styles from '@/styles/sistema/Adicionar/adicionar.module.css'

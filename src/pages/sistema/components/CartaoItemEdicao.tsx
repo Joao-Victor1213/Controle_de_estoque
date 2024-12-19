@@ -2,7 +2,7 @@ import Item from "@/model/Item";
 import { useState } from "react";
 import BotaoComum from "./BotaoComum";
 import Styles from '@/styles/sistema/Estoque/cartaoItemEdicao.module.css'
-import { atualizaItem } from "../functions/firestoreFunctions";
+import { atualizaItem } from "../../../functions/firestoreFunctions";
 import Usuario from "@/model/Usuario";
 
 interface CartaoItemEdicaoProps{
@@ -16,9 +16,9 @@ interface CartaoItemEdicaoProps{
 export default function CartaoItemEdicao(props:CartaoItemEdicaoProps){
     const usuario = props.usuario
     const item = props.item
-    const [nomeItem] = useState(item.nome)
-    const [descricaoItem, setDescricaoItem] = useState(item.descricao)
-    const [quantidadeItem, setQuantidadeItem] = useState(item.quantidade)
+    const [nomeItem] = useState(item?.nome)
+    const [descricaoItem, setDescricaoItem] = useState(item?.descricao)
+    const [quantidadeItem, setQuantidadeItem] = useState(item?.quantidade)
 
     async function salvarItem(){
         let atualizou = false
@@ -37,13 +37,18 @@ export default function CartaoItemEdicao(props:CartaoItemEdicaoProps){
             setQuantidadeItem(valor)
         }
     }
-    return(
-        <div className={Styles.cartao}>
-            <input className={Styles.inputText} type="text" value={nomeItem}/>
-            <input className={Styles.inputNumber} type="number" value={quantidadeItem} onChange={(e)=>alteraQuantidade(+e.target.value)}/>
+    if(item && usuario ){
+        return(
+            <div className={Styles.cartao}>
+                <input className={Styles.inputText} type="text" value={nomeItem}/>
+                <input className={Styles.inputNumber} type="number" value={quantidadeItem} onChange={(e)=>alteraQuantidade(+e.target.value)}/>
+    
+                <textarea className={Styles.textArea} value={descricaoItem} onChange={(e)=>{setDescricaoItem(e.target.value)}}/>
+                <BotaoComum funcaoAcao={salvarItem} texto="Salvar"/>
+            </div>
+        )
+    }else{
+        return <></>
+    }
 
-            <textarea className={Styles.textArea} value={descricaoItem} onChange={(e)=>{setDescricaoItem(e.target.value)}}/>
-            <BotaoComum funcaoAcao={salvarItem} texto="Salvar"/>
-        </div>
-    )
 }
