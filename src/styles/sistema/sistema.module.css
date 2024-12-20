@@ -125,6 +125,13 @@
     width: 100%;
 }
 
+.navMobile1 ul li button{
+    width: 30px;
+}
+
+.navMobile1 ul li button{
+    width: 30px;
+}
 .navMobile2{
     background-color: var(--azul_Base);
     display: none;
@@ -134,7 +141,7 @@
     height: 50px;
     width: 100%;
     position: fixed; /* Mantém fixo na viewport */
-    top: 0; /* Posiciona no fundo da tela */
+    top: 0; /* Posiciona no topo da tela */
     left: 0; /* Garante alinhamento horizontal na tela */
     padding: 1%;
     gap: 5%;

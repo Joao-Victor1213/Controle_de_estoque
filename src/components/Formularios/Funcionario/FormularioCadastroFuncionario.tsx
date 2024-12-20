@@ -28,7 +28,7 @@ export  default function FormularioCadastroFuncionario(){
     /*Funções*/
 
     return (
-        <div className='flex flex-col  gap-2 lg:w-2/5 items-center justify-center p-5 w-full bg-gradient-to-br'>
+        <div className='flex flex-col  gap-2 lg:w-2/5 items-center justify-center p-5 w-full bg-gradient-to-br '>
             {
                 errorMensagem? <p className=" text-red-800">*{errorMensagem}*</p>
                 :
