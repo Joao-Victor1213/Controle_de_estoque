@@ -4,7 +4,7 @@ Este projeto é uma aplicação CRUD desenvolvida para demonstrar minhas habilid
 ---
 
 ## **Link de Visualização**  
-Você pode visualizar o projeto hospedado na Vercel [aqui]('https://controle-de-estoque-seven.vercel.app/).
+Você pode visualizar o projeto hospedado na Vercel [aqui](https://controle-de-estoque-seven.vercel.app/).
 
 ---
 
