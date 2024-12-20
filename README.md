@@ -1,40 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# **Gerenciador de Estoque**  
+Este projeto é uma aplicação CRUD desenvolvida para demonstrar minhas habilidades em criar sistemas completos, e utilização do firebase para login, gerenciamento de dados e permissões de usuário. A aplicação tem um design baseado em tons de azul e foi projetada para organizar e gerenciar estoques de maneira eficiente e prática.
 
-## Getting Started
+---
 
-First, run the development server:
+## **Link de Visualização**  
+Você pode visualizar o projeto hospedado na Vercel [aqui]('https://controle-de-estoque-seven.vercel.app/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Descrição do Projeto**  
+O Gerenciador de Estoque é uma aplicação web que permite a manipulação de estoques de forma eficiente, com permissões baseadas em diferentes tipos de usuários. O sistema é dividido em duas principais categorias de permissões: **Gestor** e **Funcionário**, cada uma com funcionalidades específicas para atender às necessidades de gerenciamento e operação.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## **Funcionalidades**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### **Para Gestores:**
+- **Gerenciamento de Estoque**:
+  - Adicionar novos itens.
+  - Editar informações dos itens (descrição, quantidade, etc.).
+  - Remover itens do estoque.
+- **Gerenciamento de Funcionários**:
+  - Gerenciar informações dos funcionários cadastrados.
+  - Aprovar ou rejeitar solicitações de novos funcionários.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Para Funcionários:**
+1. **Cadastro e Acesso**:
+   - Utilizar o código da empresa para solicitar acesso ao sistema.
+   - Aguardar aprovação do gestor para ter permissão de uso.
+2. **Tipos de Funcionários**:
+   - **Leitor**:
+     - Visualizar o estoque completo.
+     - Editar apenas a quantidade dos itens.
+   - **Editor**:
+     - Adicionar novos itens ao estoque.
+     - Editar as informações dos itens (descrição, quantidade, etc.).
+     - Remover itens existentes.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **Como Usar**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+1. **Para Gestores**:
+   - Faça login como gestor.
+   - Utilize as ferramentas de gerenciamento para organizar o estoque e os funcionários.
+   - Aprove ou rejeite solicitações de novos funcionários na aba de gerenciamento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Para Funcionários**:
+   - Solicite acesso ao sistema utilizando o código fornecido por uma empresa gestora.
+   - Após a aprovação, use as permissões disponíveis de acordo com seu tipo de usuário (Leitor ou Editor).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **Design e Tema**  
+- O tema azul proporciona uma interface limpa e profissional, voltada para facilidade de uso.  
+- O layout é responsivo, garantindo acessibilidade em dispositivos móveis e desktops.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+## **Tecnologias Utilizadas**  
+- **Framework**: React.js / Next.js  
+- **Linguagens**: Typescript e Javascript 
+- **Banco de Dados**: Firebase  
+- **Hospedagem**: Vercel  
+- **Estilização**: Tailwind e CSS
+---
+
+## **Permissões e Segurança**  
+A aplicação foi projetada com um sistema de permissões para garantir que cada usuário tenha acesso apenas às funcionalidades adequadas à sua função.
+
+---
+
+## **Conclusão**  
+Este Gerenciador de Estoque é uma demonstração prática de minhas habilidades no desenvolvimento de sistemas CRUD, com foco em organização, segurança e experiência do usuário.
