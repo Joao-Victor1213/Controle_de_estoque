@@ -1,0 +1,20 @@
+.pagina{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    color: whitesmoke;
+    background-color: var(--azul_Secundario);
+    width: 50%;
+    height: 10%;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.titulo{
+    font-size: x-large;
+}

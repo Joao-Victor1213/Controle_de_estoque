@@ -66,10 +66,8 @@
     width: 5px; /* Largura da barra de rolagem */
 }
 
-.descricao::-webkit-scrollbar-thumb { /*barra movel */
-
-
-  }
+/* .descricao::-webkit-scrollbar-thumb { /barra movel /
+  } */
 .quantidade{
     color: whitesmoke;
     height: 10%;
