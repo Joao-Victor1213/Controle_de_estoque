@@ -76,5 +76,7 @@
 @media (max-width: 400px)  { /*Controla qual nav deve aparecer por tamanho da tela*/
     .cartaoitem{
         width: 90%;
+        max-height:350px;
+
     }
 }
