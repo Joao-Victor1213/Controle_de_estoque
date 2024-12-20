@@ -28,14 +28,14 @@ export  default function FormularioCadastroFuncionario(){
     /*Funções*/
 
     return (
-        <div className='flex flex-col w-2/5 align-middle justify-center p-4'>
+        <div className='flex flex-col  gap-2 lg:w-2/5 items-center justify-center p-5 w-full bg-gradient-to-br'>
             {
                 errorMensagem? <p className=" text-red-800">*{errorMensagem}*</p>
                 :
                 mensagem? <p className=" text-green-800">*{mensagem}*</p>:''
             }
             <h1 className={Styles.titulo}>Funcionários</h1>
-            <form onSubmit={(e)=>cadastrarUsuario(e)} className=" flex flex-col">
+            <form onSubmit={(e)=>cadastrarUsuario(e)} className=" flex flex-col w-full gap-1">
                 <input type="name" value={nome} id="nome" placeholder="Digite seu nome" onChange={(e:any)=>setNome(e.target.value)}  className=" text-black"/>
                 <input type="email" value={email} id="email" placeholder="Digite seu email" onChange={(e:any)=>setEmail(e.target.value)}  className=" text-black"/>
                 <input type="text" value={codigo} id="codigo" placeholder="Digite o codigo do seu gestor" onChange={(e:any)=>setCodigo(e.target.value)}  className=" text-black"/>
