@@ -20,9 +20,7 @@ export default function EstoquePagina(){
 
     useEffect(()=>{
         if(usuario){
-            retornaEstoquePorCodigo(usuario.codigo).then((resposta:Estoque)=>{
-                console.log('Dados por Codigo', resposta)
-                console.log('Meu usuario', usuario)
+            retornaEstoquePorCodigo(usuario.codigo).then((resposta:Estoque)=>{ //Busca o estoque, enquanto não acha manda carregar
 
                 setEstoque(resposta)
                 setCarregando(false)
@@ -60,7 +58,7 @@ export default function EstoquePagina(){
         }
         
         const cartoes:any[] = []
-        console.log(estoque)
+
         estoque?.items.forEach((item:Item)=>{
             cartoes.push(
                 <CartaoItem key={item.id} item={item}  deletaEste={deletaEsteItem} selecionaEste={selecionaEsteItem}/>

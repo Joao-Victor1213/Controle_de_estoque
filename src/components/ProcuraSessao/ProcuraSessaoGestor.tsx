@@ -13,7 +13,6 @@ export default function ProcuraSessaoGestor(props: any) {
     const auth = getAuth(firebaseApp);
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        console.log("Usuário detectado:", user);
 
         buscaDocGestor(user.uid).then((data)=>{
           setUsuarioGestor(convertUserToGestor(user, data.codigo));

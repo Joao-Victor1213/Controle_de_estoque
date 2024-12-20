@@ -13,7 +13,6 @@ export default function ProcuraSessao(props: any) {
     const auth = getAuth(firebaseApp);
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        console.log("Usuário detectado:", user);
         buscaDadosFuncionario(user.uid).then((dadosFuncionario)=>{
           setUsuario(convertUserToUsuario(user,dadosFuncionario.codigo, dadosFuncionario.status, dadosFuncionario.permissao));
         })
