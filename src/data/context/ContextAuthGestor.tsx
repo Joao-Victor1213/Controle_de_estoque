@@ -214,7 +214,6 @@ export function ContextAuthGestorWrap(props:any){ //Este será o compnente que e
             const auth = getAuth(firebaseApp)
             const result = await signInWithEmailAndPassword(auth, email, senha)
             const user = result.user
-            console.log('Usuario Logado', user)
 
             const docGestor = await buscaDocGestor(user.uid)
 

@@ -272,7 +272,7 @@ export function ContextAuthWrap(props:any){ //Este será o compnente que envolve
             const result = await signInWithPopup(auth, provider)
             const user = result.user
 
-            console.log('Usuario Logado', user.displayName)
+            console.log('Usuario Logado')
 
             if(user.email && user.displayName){ //Se o nome e o email estão setados corretamente
                 
