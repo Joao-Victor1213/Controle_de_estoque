@@ -59,7 +59,7 @@ export  default function FormularioCadastroGestor(){
             </form>
 
             <BotaoLoginGoogle funcaoLogin={loginGestorGoogle}/>
-            <p >Já possui uma conta?<Link href='/?p=gestor'> Entre Agora</Link></p>
+            <p >Já possui uma conta?<Link href='/?p=gestor'> Entre agora</Link></p>
 
         </div>
 

@@ -61,7 +61,7 @@ export  default function FormularioLoginGestor(){
                 })
 
             }}/>
-            <p>Ainda não têm um cadastro?<Link href='/Autenticacao/gestor/CadastroGestor'> Cadastre-se Agora</Link></p>
+            <p>Ainda não têm um cadastro?<Link href='/Autenticacao/gestor/CadastroGestor'> Cadastre-se agora</Link></p>
             <p>É um funcionário?<Link href='/?p=funcionario'> Vá para funcionários</Link></p>
 
         </div>

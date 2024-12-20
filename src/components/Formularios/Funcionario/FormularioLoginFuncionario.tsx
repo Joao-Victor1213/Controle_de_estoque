@@ -46,7 +46,7 @@ export  default function FormularioLoginFuncionario(){
 
             </form>
             <BotaoLoginGoogle funcaoLogin={loginUsuarioGoogle}/>
-            <p>Ainda não têm um cadastro?<Link href='/Autenticacao/funcionario/CadastroFuncionario'> Cadastre-se Agora</Link></p>
+            <p>Ainda não têm um cadastro?<Link href='/Autenticacao/funcionario/CadastroFuncionario'> Cadastre-se agora</Link></p>
             <p className=" text-black text-center">É um gestor? <Link href='/?p=gestor'> Ir para a parte das Empresas e Gestores</Link></p>
         </div>
 
