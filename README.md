@@ -7,7 +7,24 @@ Este projeto é uma aplicação CRUD desenvolvida para demonstrar minhas habilid
 Você pode visualizar o projeto hospedado na Vercel [aqui](https://controle-de-estoque-seven.vercel.app/).
 
 ---
+## Habilidades demonstradas no projeto
 
+   - Criação de Components React
+   - Responsividade
+   - Autenticação com Firebase e Google
+   - Utilização do Firestore e suas funções
+   - Utilização de variaveis locais para segurança da aplicação
+   - Utilização de Contextos com Next.js
+   - Utilização se Sessões com Firebase
+   - Utilização dos Hooks (useEffect, useRouter, useState, useContext)
+   - Tratamento de erros com Exceção
+   - Manipulação de strings
+   - Manipulação de rotas
+   - Utilização de Typescript
+   - Utiilização de eventos
+   - Utilização de Classes e Interfaces
+   - Comunicação direta e indireta
+   
 ## **Descrição do Projeto**  
 O Gerenciador de Estoque é uma aplicação web que permite a manipulação de estoques de forma eficiente, com permissões baseadas em diferentes tipos de usuários. O sistema é dividido em duas principais categorias de permissões: **Gestor** e **Funcionário**, cada uma com funcionalidades específicas para atender às necessidades de gerenciamento e operação.
 
