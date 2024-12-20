@@ -4,6 +4,7 @@ import { adicionaCodigoParaFuncionario, atualizaStatusFuncionario } from "../../
 import Carregando from "@/components/Carregando";
 import { useRouter } from "next/router";
 import { adicionaFuncionarioAEspera } from "@/data/context/functions/functionsContext";
+import Styles from '@/styles/AdicionaCodigo.module.css'
 interface AdicionaCodigoProps{
     mensagem?:string
 }
@@ -40,12 +41,12 @@ export default function AdicionaCodigo(props:AdicionaCodigoProps){
 
     return( //Conteudo da pagina
 
-        <div>
-            <h1>Adicione um código para continuar</h1>
-            <p>{mensagemErro??props.mensagem}</p>
-            <input value={codigo} onChange={(e)=>{setCodigo(e.target.value)}}></input>
-            <button onClick={adicionaCodigo} className=" text-black">Adicionar</button>
-            <button onClick={cleanUsuario} className=" text-black m-2">Sair</button>
+        <div className={Styles.pagina}>
+            <h1 className={Styles.titulo}>Adicione um código para continuar</h1>
+            <p className=" text-red-700">*{mensagemErro??props.mensagem}*</p>
+            <input value={codigo} onChange={(e)=>{setCodigo(e.target.value)}} className={Styles.entradaTexto}></input>
+            <button onClick={adicionaCodigo} className={Styles.botao}>Adicionar</button>
+            <button onClick={cleanUsuario} className={Styles.botao}>Sair</button>
 
         </div>
     )

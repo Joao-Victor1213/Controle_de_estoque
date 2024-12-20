@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .botao{
     color: whitesmoke;
     background-color: var(--azul_Secundario);
@@ -18,4 +17,9 @@
 .titulo{
     font-size: x-large;
     text-align: center;
+}
+
+.entradaTexto{
+    margin-top: 20px;
+    width: 50%;
 }
